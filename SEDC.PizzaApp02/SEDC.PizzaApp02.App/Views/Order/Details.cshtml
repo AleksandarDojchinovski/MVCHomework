@@ -1,0 +1,16 @@
+﻿@using SEDC.PizzaApp03.App.Models.Domain
+@*Homework part 1
+    *@
+    @model Order
+@*    <h2>Order no.@Model.Id</h2>
+
+<ul>
+    <li>Pizza Name: @Model.Pizza.Name</li>
+    <li>User Name: @Model.User.FirstName @Model.User.LastName</li>
+    <li>Payment Method: @Model.PaymentMethod</li>
+    <li>Price: @Model.Pizza.Price</li>
+    <li>Delivered: @(Model.IsDelivered ? "Yes" : "No")</li>
+</ul>*@
+
+
+@Html.Partial("~/Views/Shared/Partial/_Order.cshtml", Model)
